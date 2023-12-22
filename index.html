@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма Реєстрації</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form>
+    <h2>Реєстрація</h2>
+
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="age">Вік:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="birthdate">Дата народження:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+
+    <label for="slider">Оберіть значення:</label>
+    <input type="range" id="slider" name="slider" min="0" max="100" step="1" value="50">
+    <div class="subm">
+      <input type="checkbox" id="subscribe" name="subscribe">
+      <label for="subscribe">Підписатися на розсилку</label>
+    </div>
+
+    <p>Стать:</p>
+    <div class="gender">
+      <label for="male">Чоловіча</label>
+      <input type="radio" id="male" name="gender" value="male">
+    </div>
+    <div class="gender">
+      <label for="female">Жіноча</label>
+      <input type="radio" id="female" name="gender" value="female">
+    </div>
+
+    <label for="country">Оберіть країну:</label>
+    <select id="country" name="country">
+        <option value="ukraine">Україна</option>
+        <option value="ge">Германія</option>
+        <option value="poland">Польща</option>
+    </select>
+
+    <label for="comments">Додаткові коментарі:</label>
+    <textarea id="comments" name="comments" rows="4" style="max-width: 300px; max-height: 150px; width: 100%; height: 100%;"></textarea>
+
+    <button type="submit">Зареєструватися</button>
+</form>
+
+</body>
+</html>
